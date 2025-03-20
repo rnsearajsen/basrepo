@@ -1,0 +1,27 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.modularization_view" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Shell>
+        <App>
+            <pages>
+                <Page id="page" title="{i18n>title_module}" class="sapUiResponsiveMargin">
+                    <content>
+                        <Panel class="sapUiMediumMarginTopBottom" width="100%">
+                            <Button text="Message Box" type="Emphasized" press="onPress" />
+                        </Panel>
+                        <!-- Layout View (Nested View) -->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.Layout_View" />
+                        <!-- Responsive Grid Layout (Nested View)-->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.ResponsiveGridLayout" />
+                        <!-- Carousel Pages Aggregation Binding -->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.Carousel" />
+                        <!-- Bind Element Combo Box -->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.Bindelement_Combox" />
+                        <!-- Bind Element Combo Box Formal Model -->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.Bindelement_Combox_FormalModel" />
+                        <!-- Bind Element List Item -->
+                        <mvc:XMLView viewName="ux400.training.ux400handson.view.Bindelement_Listitem" />
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

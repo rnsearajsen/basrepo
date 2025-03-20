@@ -1,0 +1,25 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.Carousel" xmlns:f="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Panel headerText="Carousel Pages" expandable="true" expanded="false">
+        <Carousel pages="{CarouselData>/connections}">
+            <pages>
+                <f:SimpleForm>
+                    <f:content>
+                        <Label text="Carrier" />
+                        <Text text="{CarouselData>carrid}" />
+                        <Label text="Carrier" />
+                        <Text text="{CarouselData>connid}" />
+                        <Label text="Carrier" />
+                        <Text text="{CarouselData>cityFrom}" />
+                        <Label text="Carrier" />
+                        <Text text="{CarouselData>cityTo}" />
+                    </f:content>
+                </f:SimpleForm>
+            </pages>
+        </Carousel>
+        <List items="{CarouselData>/connections}">
+            <items>
+                <StandardListItem title="{CarouselData>carrid} {CarouselData>connid}" description="From {CarouselData>cityFrom} to {CarouselData>cityTo} " />
+            </items>
+        </List>
+    </Panel>
+</mvc:View>

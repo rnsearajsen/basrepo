@@ -1,0 +1,14 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.Bindelement_Combox_FormalModel" xmlns:core="sap.ui.core" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Panel headerText="(Not Working) Bind Element - Combo Box Formal Model" expandable="true" expanded="false" >
+    <ComboBox items="{Combox>/data}" selectionChange="onSelectionChange">
+        <items>
+            <core:Item text="{Combox>department}" />
+        </items>
+    </ComboBox>
+    <List id="idList" items="{data/employees}">
+        <items>
+            <StandardListItem title="{name}" />
+        </items>
+    </List>
+    </Panel>
+</mvc:View>

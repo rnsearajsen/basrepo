@@ -1,0 +1,14 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.Bindelement_Combox" xmlns:core="sap.ui.core" displayBlock="true" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Panel headerText="Bind Element - Combo Box " expandable="true" expanded="false" >
+    <ComboBox items="{/data}" selectionChange="onSelectionChange">
+        <items>
+            <core:Item text="{department}" />
+        </items>
+    </ComboBox>
+    <List id="idList" items="{employees}">
+        <items>
+            <StandardListItem title="{name}" />
+        </items>
+    </List>
+    </Panel>
+</mvc:View>

@@ -1,0 +1,19 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.Layout_View" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Panel expandable="true" expanded="false" headerText="{i18n>title_layout}" width="90%" class="sapUiMediumMarginBeginEnd sapUiMediumMarginTopBottom" >
+    <l:VerticalLayout>
+        <l:content>
+            <Label text="Name:" labelFor="IdInput" />
+            <Input id="IdInput" value="John" />
+            <Button text="Submit" />
+        </l:content>
+    
+        <l:HorizontalLayout class="sapUiMediumMarginTopBottom" >
+            <l:content>
+                <Label text="Name:" labelFor="IdInput1" class="sapUiSmallMarginEnd" />
+                <Input id="IdInput1" value="John" width="auto" class="sapUiMediumMarginEnd" />
+                <Button text="Submit" />
+            </l:content>
+        </l:HorizontalLayout>
+    </l:VerticalLayout>
+    </Panel>
+</mvc:View>

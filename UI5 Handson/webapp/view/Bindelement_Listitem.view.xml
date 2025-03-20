@@ -1,0 +1,61 @@
+<mvc:View controllerName="ux400.training.ux400handson.controller.Bindelement_Listitem" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <Panel headerText="Bind Element - Listitem" expandable="true" expanded="false">
+        <Table items="{/Airline}" headerText="Carriers" mode="SingleSelectMaster" selectionChange="onCarrierSelectionChange">
+            <columns>
+                <Column>
+                    <header>
+                        <Text text="Id" />
+                    </header>
+                </Column>
+                <Column>
+                    <header>
+                        <Text text="Carrier Name" />
+                    </header>
+                </Column>
+                <Column>
+                    <header>
+                        <Text text="Currency" />
+                    </header>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{carriers/carrid}" />
+                        <Text text="{carriers/carrname}" />
+                        <Text text="{carriers/currency}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+        <!-- Connections -->
+                <Table id="idConntable" items="{connections}" headerText="Flight Connections">
+            <columns>
+                <Column>
+                    <header>
+                        <Text text="Connection ID" />
+                    </header>
+                </Column>
+                <Column>
+                    <header>
+                        <Text text="City From" />
+                    </header>
+                </Column>
+                <Column>
+                    <header>
+                        <Text text="City To" />
+                    </header>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{connid}" />
+                        <Text text="{cityFrom}" />
+                        <Text text="{cityTo}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+</mvc:View>
